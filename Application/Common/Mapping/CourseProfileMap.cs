@@ -11,8 +11,12 @@ public class CourseProfileMap : Profile
     {
         CreateMap<CreateCourseRequest, Course>();
 
-        CreateMap<Course, GetCourseResponse>();
+        CreateMap<Course, GetCourseResponse>()
+            .ForMember(x => x.Instructor, opt =>
+                opt.MapFrom(src => src.Instructor));
 
-        CreateMap<Course, GetAllCourseResponse>();
+        CreateMap<Course, GetAllCourseResponse>()
+            .ForMember(x => x.Instructor, opt =>
+                opt.MapFrom(src => src.Instructor));
     }
 }
