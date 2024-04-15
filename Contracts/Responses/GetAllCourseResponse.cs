@@ -2,27 +2,27 @@
 
 public class GetAllCourseResponse
 {
-    public Guid Id { get; set; }
-    public required string Title { get; set; }
-    public Guid InstructorId { get; set; }
-    public DateOnly StartDate { get; set; }
-    public DateOnly EndDate { get; set; }
-    public required string Description { get; set; }
+    public Guid Id { get; init; }
+    public required string Title { get; init; }
+    public Guid InstructorId { get; init; }
+    public DateOnly StartDate { get; init; }
+    public DateOnly EndDate { get; init; }
+    public required string Description { get; init; }
 
-    public required GetAllCourseResponseInstructor Instructor { get; set; }
+    public required GetAllCourseResponseInstructor Instructor { get; init; }
 }
 
 public class GetAllCourseResponseInstructor
 {
-    public Guid Id { get; set; }
-    public required string FirstName { get; set; }
-    public required string LastName { get; set; }
-    public required string Email { get; set; }
-    public required string PhoneNumber { get; set; }
-    public required string Address { get; set; }
-    public required string City { get; set; }
-    public required string State { get; set; }
-    public required string ZipCode { get; set; }
-    public required string Country { get; set; }
-    public required string Description { get; set; }
+    public Guid Id { get; init; }
+    public required string FirstName { get; init; }
+    public required string LastName { get; init; }
+    public required string Email { get; init; }
+    public required string PhoneNumber { get; init; }
+    public required string Address { get; init; }
+    public required string City { get; init; }
+    public required string State { get; init; }
+    public required string ZipCode { get; init; }
+    public required string Country { get; init; }
+    public required string Description { get; init; }
 }

@@ -2,9 +2,9 @@
 
 public class CreateCourseRequest
 {
-    public required string Title { get; set; }
-    public Guid InstructorId { get; set; }
-    public DateOnly StartDate { get; set; }
-    public DateOnly EndDate { get; set; }
-    public required string Description { get; set; }
+    public required string Title { get; init; }
+    public Guid InstructorId { get; init; }
+    public DateOnly StartDate { get; init; }
+    public DateOnly EndDate { get; init; }
+    public required string Description { get; init; }
 }
