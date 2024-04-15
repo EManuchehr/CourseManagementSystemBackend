@@ -11,6 +11,9 @@ public static class DependencyInjection
     {
         services.AddAutoMapper(Assembly.GetExecutingAssembly());
 
+        services.AddScoped<IBaseService<Course>, CourseService>();
+        services.AddScoped<IBaseService<Instructor>, InstructorService>();
+
         return services;
     }
 }
