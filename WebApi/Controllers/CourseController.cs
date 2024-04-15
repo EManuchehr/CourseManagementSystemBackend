@@ -8,7 +8,7 @@ namespace WebApi.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
-public class CourseController(CourseService courseService, IMapper mapper) : ControllerBase
+public class CourseController(IBaseService<Course> courseService, IMapper mapper) : ControllerBase
 {
     [HttpPost]
     public async Task<IActionResult> Create([FromBody] CreateCourseRequest request, CancellationToken token)
